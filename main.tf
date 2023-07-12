@@ -13,7 +13,7 @@ provider "null" {
 
 /* a list of local variables */
 locals {
-  jones = ["indy", "henry", "marian"]
+  jones = ["indy", "henry", "marian", "katanga"]
 }
 
 
@@ -31,8 +31,4 @@ resource "null_resource" "jones" {
 /* We want these outputs */
 output "jones" {
   value = null_resource.jones
-}
-/* a list of local variables */
-locals {
-  jones = ["indy", "henry", "marian", "katanga"]
 }
